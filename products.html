@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMARTDEEPX - المنتجات</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .navbar {
+      background-color: #000000 !important;
+      border-bottom: 3px solid #7c4dff;
+    }
+    .section-title {
+      color: #7c4dff;
+      font-weight: bold;
+    }
+    .card-dark {
+      background-color: #111111;
+      border: 1px solid #7c4dff;
+      border-radius: 12px;
+      transition: all 0.4s;
+      height: 100%;
+    }
+    .card-dark:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 15px 40px rgba(124,77,255,0.4);
+    }
+    .carousel-inner img {
+      height: 260px;
+      object-fit: contain;
+      background: #000;
+      padding: 20px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: rgba(124,77,255,0.6);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+    }
+    .btn-custom {
+      background: linear-gradient(45deg, #7c4dff, #ba68c8);
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background: linear-gradient(45deg, #ba68c8, #7c4dff);
+      transform: translateY(-3px);
+    }
+    footer {
+      background-color: #000000;
+      border-top: 4px solid #7c4dff;
+      padding: 80px 0 40px;
+      color: #ffffff !important;
+    }
+    footer p, footer a, footer small, footer li {
+      color: #ffffff !important;
+    }
+    footer h5 {
+      color: #7c4dff;
+    }
+    .hover-link {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: all 0.3s;
+    }
+    .hover-link:hover {
+      color: #7c4dff !important;
+      padding-right: 10px;
+    }
+    .social-icon {
+      font-size: 2.2rem;
+      color: #7c4dff;
+      transition: all 0.4s;
+    }
+    .social-icon:hover {
+      color: #ba68c8;
+      transform: scale(1.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="aaa.jpeg" alt="SMARTDEEPX" style="max-width: 70px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link hover-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link hover-link" href="about.html">عن الشركة</a></li>
+          <li class="nav-item"><a class="nav-link hover-link" href="why-us.html">لماذا نحن</a></li>
+          <li class="nav-item"><a class="nav-link hover-link active" href="products.html">المنتجات</a></li>
+          <li class="nav-item"><a class="nav-link hover-link" href="services.html">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link hover-link" href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-5 mt-5 text-center">
+    <div class="container">
+      <h1 class="display-4 section-title mb-4" data-aos="fade-down">منتجاتنا</h1>
+      <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">تشكيلة واسعة من أفضل المنتجات بجودة عالية وأسعار تنافسية</p>
+    </div>
+  </section>
+
+  <!-- Products with 3 Images Carousel per Category -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- طابعات -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-dark text-center h-100">
+            <div id="carouselPrinters" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="طابعة حديثة">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=800" class="d-block w-100 product-img" alt="طابعة ليزر متعددة الوظائف">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b915?w=800" class="d-block w-100 product-img" alt="طابعة مع أوراق">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrinters" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPrinters" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">طابعات</h5>
+              <p class="small flex-grow-1">طابعات ليزر ونافثة للحبر عالية السرعة والدقة من أفضل العلامات العالمية.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لطابعات" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- أحبار ليزر -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="card-dark text-center h-100">
+            <div id="carouselLaserInks" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" class="d-block w-100 product-img" alt="كرتونة أحبار ليزر">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="أحبار ليزر مثبتة">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b915?w=800" class="d-block w-100 product-img" alt="علبة أحبار ليزر ملونة">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaserInks" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselLaserInks" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">أحبار ليزر</h5>
+              <p class="small flex-grow-1">أحبار ليزر أصلية وبديلة بجودة عالية، توفير كبير وطباعة واضحة.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لأحبار ليزر" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- أحبار ink -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-dark text-center h-100">
+            <div id="carouselInk" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="زجاجات أحبار ink">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" class="d-block w-100 product-img" alt="أحبار ink ملونة">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b915?w=800" class="d-block w-100 product-img" alt="علب أحبار ink">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselInk" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselInk" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">أحبار ink</h5>
+              <p class="small flex-grow-1">أحبار نافثة للحبر أصلية وبديلة متوافقة مع جميع أنواع الطابعات.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لأحبار ink" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- لابتوبات -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="card-dark text-center h-100">
+            <div id="carouselLaptops" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800" class="d-block w-100 product-img" alt="لابتوب مفتوح">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b915?w=800" class="d-block w-100 product-img" alt="لابتوب على مكتب">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="لابتوب حديث">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaptops" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselLaptops" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">لابتوبات</h5>
+              <p class="small flex-grow-1">لابتوبات حديثة عالية الأداء، خفيفة الوزن ومناسبة للأعمال والاستخدام اليومي.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر للابتوبات" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ديسك توب -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-dark text-center h-100">
+            <div id="carouselDesktops" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b915?w=800" class="d-block w-100 product-img" alt="جهاز ديسك توب 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" class="d-block w-100 product-img" alt="جهاز ديسك توب 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="جهاز ديسك توب 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktops" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktops" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">ديسك توب</h5>
+              <p class="small flex-grow-1">أجهزة ديسك توب قوية وموثوقة للمكاتب والاستخدام المهني.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لديسك توب" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- شاشات -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+          <div class="card-dark text-center h-100">
+            <div id="carouselMonitors" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800" class="d-block w-100 product-img" alt="شاشة مكتبية 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" class="d-block w-100 product-img" alt="شاشة منحنية 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="شاشة مزدوجة 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonitors" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMonitors" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">شاشات</h5>
+              <p class="small flex-grow-1">شاشات عالية الدقة والوضوح للعمل المكتبي والترفيه.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لشاشات" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- قرطاسية -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-dark text-center h-100">
+            <div id="carouselStationery" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800" class="d-block w-100 product-img" alt="مكتب قرطاسية 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" class="d-block w-100 product-img" alt="أدوات قرطاسية ملونة 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1d2e2a3e4f4?w=800" class="d-block w-100 product-img" alt="مجموعة قرطاسية 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselStationery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselStationery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="accent-purple">قرطاسية</h5>
+              <p class="small flex-grow-1">مستلزمات قرطاسية مكتبية متنوعة وعالية الجودة لكل احتياجاتك اليومية.</p>
+              <a href="https://wa.me/+966531250124?text=مرحبا SMARTDEEPX، أريد عرض سعر لقرطاسية" class="btn btn-custom mt-auto">اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <img src="aaa.jpeg" alt="SMARTDEEPX" width="220" class="mb-4">
+          <p>حلول طباعة ومكاتب ذكية بجودة عالية وأسعار تنافسية في المملكة العربية السعودية</p>
+          <p class="small mt-4">© 2026 SMARTDEEPX - جميع الحقوق محفوظة</p>
+          <div class="d-flex gap-4 mt-3">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/+966531250124" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><a href="index.html" class="hover-link">الرئيسية</a></li>
+            <li class="mb-2"><a href="about.html" class="hover-link">عن الشركة</a></li>
+            <li class="mb-2"><a href="why-us.html" class="hover-link">لماذا نحن</a></li>
+            <li class="mb-2"><a href="products.html" class="hover-link">المنتجات</a></li>
+            <li class="mb-2"><a href="services.html" class="hover-link">الخدمات</a></li>
+            <li><a href="contact.html" class="hover-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <h5>تواصل معنا</h5>
+          <div class="location-highlight mt-3">
+            <p><i class="bi bi-geo-alt-fill me-2 accent-purple"></i> 
+              <strong>الرياض - العليا - حراج الكمبيوتر - الطابق الثاني - معرض رقم ٣٣</strong>
+            </p>
+          </div>
+          <p class="mt-3"><i class="bi bi-telephone-fill me-2 accent-purple"></i> 0531250124</p>
+          <p><i class="bi bi-whatsapp me-2 accent-purple"></i> <a href="https://wa.me/+966531250124" class="hover-link">واتساب</a></p>
+          <p><i class="bi bi-envelope-fill me-2 accent-purple"></i> info@smartdeepx.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
